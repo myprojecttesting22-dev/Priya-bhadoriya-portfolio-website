@@ -173,8 +173,8 @@ p {
 }
 
 .hero-image {
-    flex: 0 0 300px;
-    height: 300px;
+    flex: 0 0 320px;
+    height: 320px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid white;
@@ -185,6 +185,7 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .hero-name {
@@ -277,20 +278,15 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.project-image-placeholder {
-    height: 200px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.project-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.project-image-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/* Removed .project-image-placeholder styles */
 
 .project-info {
     padding: 20px;
@@ -340,9 +336,31 @@ p {
     margin-top: 30px;
 }
 
-.contact-info p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
+.contact-icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.icon-link {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+}
+
+.icon-link:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .contact-form .form-group {
@@ -422,11 +440,6 @@ p {
         text-align: center;
     }
 
-    .navbar .container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
     .nav-links {
         gap: 15px;
         flex-direction: column;
@@ -452,7 +465,10 @@ p {
         /* Force single column */
     }
 
-    .project-image-placeholder {
-        height: 180px;
+    /* Mobile Responsiveness Helper */
+    .hero-image {
+        width: 280px;
+        height: 280px;
+        flex: 0 0 280px;
     }
 }

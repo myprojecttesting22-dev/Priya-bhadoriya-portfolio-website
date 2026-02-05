@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -40,12 +42,13 @@
                     projects run faster and smoother.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#resume" class="btn btn-secondary">Download Resume</a>
+                    <a href="https://github.com/myprojecttesting22-dev/Priya_Bhadoriya_Resume.pdf/raw/main/Priya_Bhadoriya_Resume-2.pdf"
+                        class="btn btn-secondary" target="_blank">Download Resume</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/profile.jpg" alt="Priya Bhadoriya">
+                <img src="assets/profile.png" alt="Priya Bhadoriya - Civil Engineer">
             </div>
         </div>
     </section>
@@ -108,11 +111,7 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-image-placeholder residential-project-img">
-                        <!-- Image will be set via CSS or img tag if generated -->
-                        <img src="assets/residential_project.png" alt="Residential Building Drafting"
-                            onerror="this.style.display='none'; this.parentNode.style.backgroundColor='#eee'">
-                    </div>
+                    <img src="assets/residential_project.png" alt="Residential Building Drafting" class="project-img">
                     <div class="project-info">
                         <h3>Residential Building Drafting</h3>
                         <p class="project-desc">AutoCAD plans, sections, elevations, BOQ preparation.</p>
@@ -122,10 +121,7 @@
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-image-placeholder revit-project-img">
-                        <img src="assets/revit_project.png" alt="Revit BIM Model"
-                            onerror="this.style.display='none'; this.parentNode.style.backgroundColor='#eee'">
-                    </div>
+                    <img src="assets/revit_project.png" alt="Revit BIM Model" class="project-img">
                     <div class="project-info">
                         <h3>Revit BIM Model</h3>
                         <p class="project-desc">3D building model with schedules and drawing extraction.</p>
@@ -135,10 +131,7 @@
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <div class="project-image-placeholder nicmar-project-img">
-                        <img src="assets/nicmar_project.png" alt="NICMAR Academic Project"
-                            onerror="this.style.display='none'; this.parentNode.style.backgroundColor='#eee'">
-                    </div>
+                    <img src="assets/nicmar_project.png" alt="NICMAR Academic Project" class="project-img">
                     <div class="project-info">
                         <h3>NICMAR Academic Project</h3>
                         <p class="project-desc">Planning, estimation, documentation, and team coordination.</p>
@@ -169,7 +162,8 @@
         <div class="container">
             <h2 class="section-title">Resume</h2>
             <p style="margin-bottom: 2rem;">Ready to bring practical engineering skills to your team.</p>
-            <a href="#" class="btn btn-primary" download>Download Resume (PDF)</a>
+            <a href="https://github.com/myprojecttesting22-dev/Priya_Bhadoriya_Resume.pdf/raw/main/Priya_Bhadoriya_Resume-2.pdf"
+                class="btn btn-primary" target="_blank">Download Resume (PDF)</a>
         </div>
     </section>
 
@@ -181,9 +175,18 @@
 
             <div class="contact-grid">
                 <div class="contact-info">
-                    <p><strong>Phone:</strong> [Phone Number]</p>
-                    <p><strong>Email:</strong> [Email Address]</p>
-                    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/priya-bhadoriya</a></p>
+                    <div class="contact-icons">
+                        <a href="mailto:bhadouriapria.06@gmail.com" class="icon-link" title="Email Me">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/priya-bhadoriya-555945219/" class="icon-link"
+                            target="_blank" title="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="tel:9022319567" class="icon-link" title="Call Me">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <form class="contact-form">
